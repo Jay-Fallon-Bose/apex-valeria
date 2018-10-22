@@ -1,0 +1,154 @@
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    padding: 2rem;
+    width: 48rem;
+    height: 44rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.panel-01,
+.panel-02,
+.panel-03,
+.panel-04 {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 58rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.panel-01 {
+    z-index: 40;
+}
+
+.panel-02 {
+    z-index: 30;
+}
+
+.panel-03 {
+    z-index: 20;
+}
+
+.panel-04 {
+    z-index: 10;
+}
+
+.survey-nav {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.survey-nav.panel-01-nav {
+    justify-content: flex-end;
+}
+
+.survey-nav-item {
+    padding: 0;
+    list-style: none;
+}
+
+.survey-action {
+    display: flex;
+    justify-content: center;
+}
+
+#panel-01-next,
+#panel-02-next,
+#panel-03-submit {
+    opacity: 0.5;
+}
+
+/* Customize the label (the container) */
+
+.container {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.radiomark {
+    border-radius: 25px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* .container:hover input~.checkmark {
+    background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark.radiomark:after {
+    border-radius: 20px;
+}
+
+.container .checkmark:after {
+    left: 2px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+}

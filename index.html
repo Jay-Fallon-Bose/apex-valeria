@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form name="surveyForm">
+                <div class="panel-01" id="panel-01">
+                    <nav>
+                        <ul class="survey-nav panel-01-nav">
+                            <li class="survey-nav-item"><span id="panel-01-skip">skip</span></li>
+                        </ul>
+                    </nav>
+                    <div class="survey-questions" id="sq1">
+                        <h1>How comfortable are you using virtual assistants
+                            (like Alexa, Siri, or Google Assistant)?</h1>
+                        <label class="container">Very! I own one and I use it often
+                            <input type="radio" id="r1" name="q1" value="Very! I own one and I use it often">
+                            <span class="radiomark checkmark"></span>
+                        </label>
+                        <label class="container">I own one, but I am not comfortable using it
+                            <input type="radio" id="r2" name="q1" value="I own one, but I am not comfortable using it">
+                            <span class="radiomark checkmark"></span>
+                        </label>
+                        <label class="container">I don't own one, but I know how to use them
+                            <input type="radio" id="r3" name="q1" value="I don't own one, but I know how to use them">
+                            <span class="radiomark checkmark"></span>
+                        </label>
+                        <label class="container">I'm new to this technology
+                            <input type="radio" id="r4" name="q1" value="I'm new to this technology">
+                            <span class="radiomark checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="survey-action">
+                        <span id="panel-01-next">next</span>
+                    </div>
+                </div>
+                <div class="panel-02" id="panel-02">
+                    <nav>
+                        <ul class="survey-nav">
+                            <li class="survey-nav-item"><span id="panel-02-back">back</span></li>
+                            <li class="survey-nav-item"><span id="panel-02-skip">skip</span></li>
+                        </ul>
+                    </nav>
+                    <div class="survey-questions">
+                        <h1>"What activities do you do while listening to music?"</h1>
+                        <label class="container">Cooking
+                            <input type="checkbox" id="ch1" name="q2" value="Cooking">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Exercise
+                            <input type="checkbox" id="ch2" name="q2" value="Exercise">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Socializing
+                            <input type="checkbox" id="ch3" name="q2" value="Socializing">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Work
+                            <input type="checkbox" id="ch4" name="q2" value="Work">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Chores
+                            <input type="checkbox" id="ch5" name="q2" value="Chores">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Being Creative
+                            <input type="checkbox" id="ch6" name="q2" value="Being Creative">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Morning Routine
+                            <input type="checkbox" id="ch7" name="q2" value="Morning Routine">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Relaxing
+                            <input type="checkbox" id="ch8" name="q2" value="Relaxing">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="survey-action">
+                        <span id="panel-02-next">next</span>
+                    </div>
+                </div>
+                <div class="panel-03" id="panel-03">
+                    <nav>
+                        <ul class="survey-nav">
+                            <li class="survey-nav-item"><span id="panel-03-back">back</span></li>
+                            <li class="survey-nav-item"><span id="panel-03-skip">skip</span></li>
+                        </ul>
+                    </nav>
+                    <div class="survey-questions">
+                        <h1>Who do you enjoy listening to music with?</h1>
+                        <label class="container">Myself
+                            <input type="checkbox" id="ch9" name="q3" value="Myself">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">My significant other(s)
+                            <input type="checkbox" id="ch10" name="q3" value="My significant other(s)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">My kid(s)
+                            <input type="checkbox" id="ch11" name="q3" value="My kid(s)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">My friends
+                            <input type="checkbox" id="ch12" name="q3" value="My friend">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">My pet(s)
+                            <input type="checkbox" id="ch13" name="q3" value="My pet(s)">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="survey-action">
+                        <span id="panel-03-submit">submit</span>
+                    </div>
+                </div>
+                <div class="panel-04" id="panel-04">
+                    <div class="survey-questions">
+                        <h1>thank you</h1>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
