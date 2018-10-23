@@ -1,8 +1,7 @@
 window.onload = function() {
     // declare email address and survey number
     var email = "jf@bose.com";
-    var survey = "111";
-    var timestamp = new Date().toISOString();
+    var survey = "apex-survey";
 
     // declare variables based on html elements
     var panel01 = document.getElementById("panel-01");
@@ -56,7 +55,9 @@ window.onload = function() {
     // answers3 sets the value of the selection(s)
 
     function submitForm() {
+        // declare empty data array
         var data = [];
+        // push answers1 to data as it uses a different method than checkbox
         data.push(answers1);
 
         // combine answers from all panels into data
@@ -70,7 +71,7 @@ window.onload = function() {
         combineAnswers(questions[2], answers3);
 
         // build final answers object
-        var finalAnswers = { email, data, survey, timestamp };
+        var finalAnswers = { email, data };
         // jsonify finalAnswers into surveyData
         let surveyData = JSON.stringify(finalAnswers);
         // check the object in console
